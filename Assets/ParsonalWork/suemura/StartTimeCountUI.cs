@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class StartTimeCountUI : MonoBehaviour
 {
+    private StartTimeCountUI startTimeCountUI;
     /// <summary>
     /// イメージを表示させる場所
     /// </summary>
@@ -22,6 +23,7 @@ public class StartTimeCountUI : MonoBehaviour
 
     private void Start()
     {
+        startTimeCountUI = GetComponent<StartTimeCountUI>();
         StartCoroutine(CountDownImage());
     }
 
@@ -35,5 +37,6 @@ public class StartTimeCountUI : MonoBehaviour
        }
 
        displayImage.gameObject.SetActive(false);
+       
     }
 }
