@@ -9,6 +9,7 @@ public class PlayerBehaviour : MonoBehaviour
     /// <summary>‹ó</summary>
     private const int Empty = 0;
 
+
     /// <summary>‰ÁŒ¸“x</summary>
     private float accelDecel = 1;
 
